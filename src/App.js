@@ -8,11 +8,15 @@ function App() {
 		setCount((prevCount) => prevCount - 1);
 	}
 
+	function incrementCount() {
+		setCount((prevCount) => prevCount + 1);
+	}
+
 	return (
 		<div>
 			<button onClick={decrementCount}>-</button>
 			<span>{count}</span>
-			<button>+</button>
+			<button onClick={incrementCount}>+</button>
 		</div>
 	);
 }
